@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web Browser - Key Concepts</title>
+    <link rel="stylesheet" href="/IT3203/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 class="address-bar-heading">The Web Browser</h1>
+
+            <nav class="tab-container">
+                <ul class="tab-menu">
+                    <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
+                    <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link">Role And Purpose</a></li>
+                    <li class="tab-item"><a href="/IT3203/history.html" class="tab-link">History</a></li>
+                    <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
+                    <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
+                    <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link active">Key Concepts</a></li>
+                    <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
+                    <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
+                </ul>
+            </nav>
+
+<h2>Key Concepts</h2>
+
+    </main>
+</body>
+</html>
