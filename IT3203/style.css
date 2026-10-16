@@ -157,8 +157,8 @@ h2 {
   padding-left: calc(50vw - 50% + 20px); 
   padding-right: calc(50vw - 50% + 20px);
 }
-
-/* Container styling */
+/*
+/* Container styling 
 #key-terms {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   max-width: 800px;
@@ -166,6 +166,7 @@ h2 {
   padding: 20px;
   color: #333333;
 }
+*/
 
 /* Section Header */
 #key-terms h2 {
@@ -240,4 +241,21 @@ li::marker {
 /* Ensure nested sub-lists indent further relative to their parent */
 ul ul, ol ol, ul ol, ol ul {
   margin: 0.5rem 0 0.5rem 30px;
+}
+
+.list-container {
+  display: flex;       /* Aligns the child <ul> elements side by side */
+  gap: 20px;           /* Adds space between the two lists */
+}
+
+/* Universal image styling for all website images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Prevents images from stretching wider than their container */
+  height: auto;    /* Maintains correct aspect ratio */
+  border: 1px solid #cccccc; /* Simple, light gray border */
+  padding: 5px;   /* Optional: adds a neat white space gap between image and border */
+  background-color: #ffffff; /* Ensures the gap background stays clean white */
 }
