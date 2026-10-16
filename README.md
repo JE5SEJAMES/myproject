@@ -1,2 +1,3 @@
 # myproject
-I added this because I couldn't create a Codespace with an empty repository
+
+IT3203 Milestone 1 Project - The Web Browser
