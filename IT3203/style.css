@@ -1,261 +1,238 @@
-main
-{
-    width: 100%;
-    margin: auto;
+/* ===GLOBAL STYLES AND LAYOUT=== */
+
+/* Main container structure */
+main {
+    width: 90%;          /* Uses a safe percentage width for the page */
+    max-width: 800px;    /* Keeps the line length easy to read */
+    margin: 0 auto;      /* Centers the entire page content */
+    font-family: Arial, sans-serif; /* Standard fallback font */
 }
 
-/* Container background (like a browser's window top bar) */
-.tab-container {
-  padding-top: 10px;
+/* Global headings styling */
+h2 {
+  font-size: 28px;
+  color: #111111;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eaeaea; /* Simple bottom underline border */
 }
 
-/* Layout for the tab menu */
-.tab-menu {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0 10px;           
-  border-bottom: 1px solid #ccc;
+/* Styling for all paragraphs */
+p {
+  line-height: 1.6;
+  color: #333333;
 }
 
-/* Spacing between the tabs */
-.tab-item {
-  margin-right: 4px;
+/* Class for double indenting paragraphs */
+.double-indent {
+  margin-left: 40px; 
+  text-indent: 30px; /* Indents just the first line of the block */
 }
 
-/* Default look for inactive tabs */
-.tab-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #555;
-  background-color: #d0d0d0; /* Darker than container so active stands out */
-  white-space: nowrap; /* Keeps long titles flat */
-  padding: 8px 20px;
-  font-family: sans-serif;
-  font-size: 14px;
-  
-  /* Round the top left and top right corners */
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  
-  /* Subtle borders around the tab shape */
-  border: 1px solid #ccc;
-  border-bottom: none; 
-  
-  /* Smooth transition when hovering */
-  transition: background-color 0.2s ease;
-}
+/* === NAVIGATION BAR AND ADDRESS BAR STYLES ===*/
 
-/* Hover state for inactive tabs */
-.tab-link:hover {
-  background-color: #e8e8e8;
-  color: #333;
-}
-
-/* The Active Tab */
-.tab-link.active {
-  background-color: #ffffff; /* Matches the content area below the nav */
-  color: #000;
-  font-weight: bold;
-  position: relative;
-  
-  /* Pull the active tab 1px down to safely sit on top of the menu's bottom border */
-  margin-bottom: -1px; 
-  padding-bottom: 9px; /* Compensate for the -1px shift so height matches */
-  border-bottom: 1px solid #ffffff; /* Masks the baseline border under this tab */
-}
-
+/* Header section styled like a browser address bar */
 .address-bar-heading {
-  /* Box layout and sizing */
   display: block;
   width: 100%;
   margin: 20px 0;
   padding: 10px 20px;
   box-sizing: border-box;
-  
-  /* Browser URL styling */
   background-color: #f1f3f4;
   color: #202124;            
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 20px;       
   font-weight: bold;
   text-align: center;
-  
-  /* Borders and shapes */
   border: 1px solid #dee2e6;
-  border-radius: 20px;       /* Gives it rounded edges */
-  
-  /* Adds a lock icon to the left using CSS */
-  position: relative;
-  padding-left: 40px;
+  border-radius: 20px;       /* Gives it the rounded address bar shape */
 }
 
-/* Places a lock icon inside the bar automatically */
-.address-bar-heading::before {
-  content: "🔒";
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12px;
+/* Float just the lock icon over to the far left edge */
+.lock-icon {
+  float: left;
 }
 
+/* Keeps the text centered */
+.bar-text {
+  display: inline-block;
+}
+
+/* Container for the navigation menu tabs */
+.tab-container {
+  padding-top: 10px;
+}
+
+/* Layout for the menu list items */
+.tab-menu {
+  display: flex;             /* Stacks list items side by side */
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;           
+  border-bottom: 1px solid #ccc; /* The tabs sit on this*/
+}
+
+/* Spacing between tab elements */
+.tab-item {
+  margin-right: 4px;
+}
+
+/* Default look for the inactive tabs */
+.tab-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  background-color: #d0d0d0; /* Darker background so the active tab looks better */
+  white-space: nowrap; 
+  padding: 8px 20px;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #ccc;
+  border-bottom: none;       /* Hides bottom border */
+}
+
+/* Hover state changes background color */
+.tab-link:hover {
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+/* Styling for the currently active tab */
+.tab-link.active {
+  background-color: #ffffff; /* Matches white background of the content area below */
+  color: #000;
+  font-weight: bold;
+  margin-bottom: -1px;       /* Pulls tab down a little over the nav baseline */
+  padding-bottom: 9px;       /* Keeps tab height even */
+}
+
+/* === COMPONENTS AND CONTENT SECTIONS === */
+
+/* Blockquote style */
 .modern-quote {
-  /* Layout & Spacing */
-  margin: 2rem 0;
-  padding: 1rem 1.5rem;
-  
-  /* Visual Styling */
+  margin: 20px 0;
+  padding: 15px 20px;
   background-color: #f8f9fa;
-  border-left: 5px solid #007bff; /* Accent color bar */
+  border-left: 5px solid #007bff; /* Blue line on the left side */
   border-radius: 0 8px 8px 0;
 }
 
 .modern-quote p {
-  /* Typography for the quote text */
   font-family: "Georgia", serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-style: italic;
-  line-height: 1.6;
-  color: #333333;
-  margin: 0 0 0.5rem 0; /* Space between text and author */
+  margin: 0 0 10px 0;
 }
 
 .modern-quote cite {
-  /* Typography for the author attribution */
-  font-family: "Arial", sans-serif;
-  font-size: 0.95rem;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   color: #6c757d;
-  display: block; /* Moves the author to a new line */
+  display: block; 
 }
 
-.double-indent {
-  /* Step 1: Shift the entire paragraph block */
-  margin-left: 40px; 
-  
-  /* Step 2: Push the first line in even further */
-  text-indent: 30px; 
-}
-
-/* Global H2 Styling for all webpages */
-h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 28px;
-  color: #111111;
-  padding-bottom: 15px;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #eaeaea;
-  
-  /* Forces the header to stretch 100% width, breaking out of parent containers */
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  
-  /* Keeps the text aligned with your central content column (assumes 20px base padding) */
-  padding-left: calc(50vw - 50% + 20px); 
-  padding-right: calc(50vw - 50% + 20px);
-}
-/*
-/* Container styling 
-#key-terms {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  color: #333333;
-}
-*/
-
-/* Section Header */
-#key-terms h2 {
-  font-size: 28px;
-  color: #111111;
-  padding-bottom: 15px;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: calc(50vw - 50% + 20px); /* Keeps text aligned with content box */
-  padding-right: calc(50vw - 50% + 20px);
-  border-bottom: 2px solid #eaeaea;
-  margin-bottom: 25px;
-}
-
-/* Category Subheaders */
+/* Key terms section formatting */
 #key-terms h3 {
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 15px;
   color: #444444;
 }
 
-/* List Formatting */
 #key-terms ul {
   list-style-type: none;
   padding-left: 0;
+  margin-left: 0;
 }
 
-/* List Item Layout */
 #key-terms li {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 12px;
   padding-left: 15px;
-  border-left: 3px solid #0066cc; /* Clean accent bar on the left */
+  border-left: 3px solid #0066cc; /* Blue border on the left side */
 }
 
-/* Highlighted Terms */
 #key-terms li strong {
   color: #0066cc;
-  font-weight: 600;
 }
 
-/* Global Unordered and Ordered Lists Styling */
+/* === LISTS, IMAGES, AND TIMELINE FORMATTING === */
+
+/* Style for lists */
 ul, ol {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333333;
-  
-  /* Matches the 40px block shift of paragraphs */
-  margin: 1.5rem 0 1.5rem 40px; 
-  
-  /* Replaces browser default bullets/numbers with an inline look */
-  padding-left: 0;             
+  margin: 20px 0 20px 40px; 
 }
 
-/* Base list item spacing */
-/* Align list items and push them to match the text-indent look */
 li {
   margin-bottom: 8px;
-  list-style-position: inside; /* Forces bullets/numbers to sit inline with the text */
-  padding-left: 30px;          /* Matches the 30px text-indent of your paragraphs */
 }
 
-/* Targets the bullets and numbers directly to use blue color */
-li::marker {
-  color: #0066cc; 
-  font-weight: bold;
-}
-
-/* Ensure nested sub-lists indent further relative to their parent */
+/* Nested lists get pushed a little right */
 ul ul, ol ol, ul ol, ol ul {
-  margin: 0.5rem 0 0.5rem 30px;
+  margin: 10px 0 10px 30px;
 }
 
-.list-container {
-  display: flex;       /* Aligns the child <ul> elements side by side */
-  gap: 20px;           /* Adds space between the two lists */
-}
-
-/* Universal image styling for all website images */
+/* Images styling */
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%; /* Prevents images from stretching wider than their container */
-  height: auto;    /* Maintains correct aspect ratio */
-  border: 1px solid #cccccc; /* Simple, light gray border */
-  padding: 5px;   /* Optional: adds a neat white space gap between image and border */
-  background-color: #ffffff; /* Ensures the gap background stays clean white */
+  max-width: 100%; 
+  height: auto;    
+  border: 1px solid #cccccc; 
+  padding: 5px;   
+  background-color: #ffffff; 
+}
+
+/* Spacing out the list on the history timeline page */
+.browser-list > li {
+  margin-bottom: 40px;
+}
+
+/* Puts browser timeline images on the right side */
+.browser-img {
+  float: right;
+  width: 100px;        
+  height: auto;        
+  margin-left: 20px;   
+  margin-bottom: 10px; 
+}
+
+/* Footer style rules */
+footer {
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* === PROJECT REFERENCES TABLE STYLES === */
+
+/* Outer grid table setup */
+.references-table {
+  width: 100%;
+  border-collapse: collapse; /* Merge borders  */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Light grey header row */
+.references-table thead tr {
+  background-color: #f1f3f4;
+}
+
+/* Padding grid boundaries and outer borders */
+.references-table th, 
+.references-table td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Clean blue color styling for links */
+.references-table td a {
+  color: #0066cc;
+  text-decoration: underline;
 }

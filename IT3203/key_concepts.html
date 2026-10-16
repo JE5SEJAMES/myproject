@@ -3,55 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the browser tab -->
     <title>The Web Browser - Key Concepts</title>
-    <link rel="stylesheet" href="/IT3203/style.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Main container for the page -->
     <main>
 
-        <h1 class="address-bar-heading">The Web Browser</h1>
+        <!-- Header section styled like a browser address bar -->
+        <h1 class="address-bar-heading">
+        <span class="lock-icon">🔒</span>
+        <span class="bar-text">The Web Browser</span>
+        </h1>
 
-            <nav class="tab-container">
-                <ul class="tab-menu">
-                    <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
-                    <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link">Role And Purpose</a></li>
-                    <li class="tab-item"><a href="/IT3203/history.html" class="tab-link">History</a></li>
-                    <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
-                    <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
-                    <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link active">Key Concepts</a></li>
-                    <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
-                    <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
-                </ul>
-            </nav>
+        <!-- Navigation section with links to other pages -->
+        <nav class="tab-container">
+            <ul class="tab-menu">
+                <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
+                <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link">Role And Purpose</a></li>
+                <li class="tab-item"><a href="/IT3203/history.html" class="tab-link">History</a></li>
+                <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
+                <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
+                <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link active">Key Concepts</a></li>
+                <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
+                <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
+            </ul>
+        </nav>
 
-            <h2>Key Concepts</h2>
+        <h2>Key Concepts</h2>
 
-            <section id="core-functionality">
-                <h3>Core Functionality &amp; Purpose</h3>
-                    <ul>
-                        <li><strong>The Client Role:</strong> A web browser acts as a software application client designed to retrieve, present, and traverse information across the World Wide Web.</li>
-                        <li><strong>The Request-Response Model:</strong> Browsers communicate by sending an HTTP request to a website server, which returns an HTTP response containing HTML, CSS, images, and other resources to be rendered visually.</li>
-                        <li><strong>Cross-Device Presentation:</strong> Modern web browsers are optimized to display web pages seamlessly across multiple devices, including desktops, laptops, smartphones, smart TVs, and gaming consoles.</li>
-                        <li><strong>Security & Privacy:</strong> Browsers implement security measures such as HTTPS, sandboxing, and privacy features to protect users from malicious websites and data breaches.</li>
-                    </ul>
-            </section>
+        <!-- Section for core browser functionality -->
+        <section id="core-functionality">
+            <h3>Core Functionality &amp; Purpose</h3>
+            <ul>
+                <li><strong>The Client Role:</strong> A web browser acts as a software application client designed to retrieve, present, and traverse information across the World Wide Web.</li>
+                <li><strong>The Request-Response Model:</strong> Browsers communicate by sending an HTTP request to a website server, which returns an HTTP response containing HTML, CSS, images, and other resources to be rendered visually.</li>
+                <li><strong>Cross-Device Presentation:</strong> Modern web browsers are optimized to display web pages seamlessly across multiple devices, including desktops, laptops, smartphones, smart TVs, and gaming consoles.</li>
+                <li><strong>Security & Privacy:</strong> Browsers implement security measures such as HTTPS, sandboxing, and privacy features to protect users from malicious websites and data breaches.</li>
+            </ul>
+        </section>
 
-            <section id="modern-evolution">
-                <h3>Modern Evolution &amp; Web Standards</h3>
-                    <ul>
-                        <li><strong>The Web Wars:</strong> A period of intense competition between web browser developers, leading to significant advancements in web technologies.</li>
-                        <li><strong>Chromium Dominance:</strong> Google Chrome's architecture heavily shapes the industry, highlighted by Microsoft transitioning its original Edge engine to Chromium in 2020.</li>
-                        <li><strong>Rendering Engines:</strong> Browsers use rendering engines (like Blink, WebKit, and Gecko) to interpret HTML, CSS, and JavaScript, converting them into the visual web pages users interact with.</li>
-                        <li><strong>W3C:</strong> Establishes overarching web standards and recommendations.</li>
-                        <li><strong>WHATWG:</strong> Maintains the foundational HTML standards.</li>
-                        <li><strong>Khronos Group:</strong> Standardizes graphics and advanced web visualization technologies.</li>
-                    </ul>
-            </section>
+        <!-- Section for browser history and standards groups -->
+        <section id="modern-evolution">
+            <h3>Modern Evolution &amp; Web Standards</h3>
+            <ul>
+                <li><strong>The Web Wars:</strong> A period of intense competition between web browser developers, leading to significant advancements in web technologies.</li>
+                <li><strong>Chromium Dominance:</strong> Google Chrome's architecture heavily shapes the industry, highlighted by Microsoft transitioning its original Edge engine to Chromium in 2020.</li>
+                <li><strong>Rendering Engines:</strong> Browsers use rendering engines (like Blink, WebKit, and Gecko) to interpret HTML, CSS, and JavaScript, converting them into the visual web pages users interact with.</li>
+                <li><strong>W3C:</strong> Establishes overarching web standards and recommendations.</li>
+                <li><strong>WHATWG:</strong> Maintains the foundational HTML standards.</li>
+                <li><strong>Khronos Group:</strong> Standardizes graphics and advanced web visualization technologies.</li>
+            </ul>
+        </section>
 
-
-        <footer style="margin-top: 30px;">
+        <!-- Footer containing project info -->
+        <footer>
             <hr>
             <p>This is a class project. The class website is:
                 <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>

@@ -3,81 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the browser tab -->
     <title>The Web Browser - History</title>
-    <link rel="stylesheet" href="/IT3203/style.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Main container for the page -->
     <main>
 
-        <h1 class="address-bar-heading">The Web Browser</h1>
+        <!-- Header section styled like a browser address bar -->
+        <h1 class="address-bar-heading">
+        <span class="lock-icon">🔒</span>
+        <span class="bar-text">The Web Browser</span>
+        </h1>
 
-            <nav class="tab-container">
-                <ul class="tab-menu">
-                    <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
-                    <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link">Role And Purpose</a></li>
-                    <li class="tab-item"><a href="/IT3203/history.html" class="tab-link active">History</a></li>
-                    <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
-                    <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
-                    <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link">Key Concepts</a></li>
-                    <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
-                    <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
-                </ul>
-            </nav>
+        <!-- Navigation section with links to other pages -->
+        <nav class="tab-container">
+            <ul class="tab-menu">
+                <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
+                <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link">Role And Purpose</a></li>
+                <li class="tab-item"><a href="/IT3203/history.html" class="tab-link active">History</a></li>
+                <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
+                <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
+                <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link">Key Concepts</a></li>
+                <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
+                <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
+            </ul>
+        </nav>
 
-            <h2>History</h2>
+        <!-- Introduction about web history -->
+        <h2>History</h2>
 
-                <p class="double-indent">The web browser (also known as a client) is an essential tool for accessing the internet and interacting with 
-                    web applications. Whether you are checking emails, streaming media, or researching a topic, a web browser 
-                    is the essential interface that brings the internet to life. It acts as a powerful interpreter, 
-                    taking raw data from distant servers and transforming it into interactive, user-friendly experiences 
-                    on your screen.
-                </p>
+        <p class="double-indent">The web browser (also known as a client) is an essential tool for accessing the internet and interacting with 
+            web applications. Whether you are checking emails, streaming media, or researching a topic, a web browser 
+            is the essential interface that brings the internet to life. It acts as a powerful interpreter, 
+            taking raw data from distant servers and transforming it into interactive, user-friendly experiences 
+            on your screen.
+        </p>
 
-                <h3>Through the Years...</h3>
+        <!-- History timeline featuring historical browsers -->
+        <h3>Through the Years...</h3>
+        <ul class="browser-list">
+
+            <li>
+                <img src="images/WorldWideWeb.png" alt="Picture of WorldWideWeb Browser" class="browser-img">
+                <strong>1990 – WorldWideWeb - </strong>The first graphical web browser created by Tim Berners-Lee while working at the European Organization for Nuclear Research (CERN)
+            </li>
+
+            <li>
+                <!-- 1991 has no image provided in your source list -->
+                <strong>1991 – Line Mode Browser – </strong>Tim Berners Lee asks Nicola Pellow (a CERN math student) to write this program for basic computer terminals
+            </li>
+
+            <li>
+                <img src="images/Mosaic.jpg" alt="Picture of Mosaic Browser" class="browser-img">
+                <strong>1993 – Mosaic – </strong>First popular web browser created by Marc Andreessen at the University of Illinois Urbana-Champaign
                 <ul>
-                    <li><strong>1990 – WorldWideWeb - </strong>The first graphical web browser created by Tim Berners-Lee while working at the European Organization for Nuclear Research (CERN) </li>
-                    <li><strong>1991 – Line Mode Browser – </strong>Tim Berners Lee asks Nicola Pellow (a CERN math student) to write this program for basic computer terminals</li>
-                    <li><strong>1993 – Mosaic – </strong>First popular web browser created by Marc Andreessen at the University of Illinois Urbana-Champaign</li>
-                        <ul>
-                            <li>Ran on Windows</li>
-                            <li>Easy to use</li>
-                            <li>Allowed images embedded in text</li>
-                            <li>Early ancestor to Mozilla Firefox</li>
-                        </ul>
-                    <li><strong>1994 – Netscape Navigator – </strong>Andreessen (creator of Mosiac) founds and releases Netscape Navigator to the public</li>
-                        <ul>
-                            <li>First browswer "for the people"</li>
-                            <li>Version 2.0 added a full mail reader (Netscapre Mail), creating an Internet suite</li>
-                        </ul>
-                    <li><strong>1995 – Internet Explorer – </strong>built by Microsoft after licensing the old Mosaic code</li>
-                        <ul>
-                            <li>Bundled with Windows</li>
-                            <li>Free of charge for all, even commercial businesses</li>
-                            <li>Sparked a “browser war” with Netscape that would last 6 years</li>
-                                <ul>
-                                    <li>Microsoft eventually won the war, and Netscape Navigator was discontinued in 2008</li>
-                                    <li>Internet Explorer went from <5% to >90% market share</li>
-                                </ul>
-                        </ul>
-                    <li><strong>2003 – Safari – </strong>Apple releases its own browser specifically for Macintosh computers</li>
-                    <li><strong>2004 – Firefox – </strong>created by Mozilla as an open-source replacement of Netscape Navigator</li>
-                        <ul>                
-                            <li>First browser to support extensions</li>
-                            <li>Mozilla teamed up with Opera (another browser company) and Apple during this time to propose and establish technical standards for HTML and other web technologies</li>
-                        </ul>
-                    <li><strong>2008 – Chrome – </strong>released by Google based on their free and open-source software, Chromium</li>
-                        <ul>
-                            <li>Faster by separating browser processes</li>
-                            <li>More secure by process isolation</li>
-                            <li>Built more toward web applications, not just document presentation</li>
-                            <li>Only available for Windows until 2010</li>
-                        </ul>                    
+                    <li>Ran on Windows</li>
+                    <li>Easy to use</li>
+                    <li>Allowed images embedded in text</li>
+                    <li>Early ancestor to Mozilla Firefox</li>
                 </ul>
+            </li>
 
+            <li>
+                <img src="images/NetscapeNavigator.gif" alt="Picture of Netscape Navigator" class="browser-img">
+                <strong>1994 – Netscape Navigator – </strong>Andreessen (creator of Mosiac) founds and releases Netscape Navigator to the public
+                <ul>
+                    <li>First browser "for the people"</li>
+                    <li>Version 2.0 added a full mail reader (Netscape Mail), creating an Internet suite</li>
+                </ul>
+            </li>
 
-        <footer style="margin-top: 30px;">
+            <li>
+                <img src="images/InternetExplorer1_0.png" alt="Picture of Internet Explorer" class="browser-img">
+                <strong>1995 – Internet Explorer – </strong>built by Microsoft after licensing the old Mosaic code
+                <ul>
+                    <li>Bundled with Windows</li>
+                    <li>Free of charge for all, even commercial businesses</li>
+                    <li>Sparked a “browser war” with Netscape that would last 6 years
+                        <ul>
+                            <li>Microsoft eventually won the war, and Netscape Navigator was discontinued in 2008</li>
+                            <li>Internet Explorer went from &lt;5% to &gt;90% market share</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <img src="images/Safari1_3.jpg" alt="Picture of Safari Browser" class="browser-img">
+                <strong>2003 – Safari – </strong>Apple releases its own browser specifically for Macintosh computers
+            </li>
+
+            <li>
+                <img src="images/Firefox.png" alt="Picture of Firefox Browser" class="browser-img">
+                <strong>2004 – Firefox – </strong>created by Mozilla as an open-source replacement of Netscape Navigator
+                <ul>
+                    <li>First browser to support extensions</li>
+                    <li>Mozilla teamed up with Opera (another browser company) and Apple during this time to propose and establish technical standards for HTML and other web technologies</li>
+                </ul>
+            </li>
+
+            <li>
+                <img src="images/Chrome.jpg" alt="Picture of Google Chrome Logo" class="browser-img">
+                <strong>2008 – Chrome – </strong>released by Google based on their free and open-source software, Chromium
+                <ul>
+                    <li>Faster by separating browser processes</li>
+                    <li>More secure by process isolation</li>
+                    <li>Built more toward web applications, not just document presentation</li>
+                    <li>Only available for Windows until 2010</li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <!-- Footer containing project info -->
+        <footer>
             <hr>
             <p>This is a class project. The class website is:
                 <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>

@@ -3,57 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the browser tab -->
     <title>The Web Browser - Role and Purpose</title>
-    <link rel="stylesheet" href="/IT3203/style.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Main container for the page -->
     <main>
 
-        <h1 class="address-bar-heading">The Web Browser</h1>
+        <!-- Header section styled like a browser address bar -->
+        <h1 class="address-bar-heading">
+        <span class="lock-icon">🔒</span>
+        <span class="bar-text">The Web Browser</span>
+        </h1>
 
-            <nav class="tab-container">
-                <ul class="tab-menu">
-                    <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
-                    <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link active">Role And Purpose</a></li>
-                    <li class="tab-item"><a href="/IT3203/history.html" class="tab-link">History</a></li>
-                    <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
-                    <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
-                    <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link">Key Concepts</a></li>
-                    <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
-                    <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
-                </ul>
-            </nav>
+        <!-- Navigation section with links to other pages -->
+        <nav class="tab-container">
+            <ul class="tab-menu">
+                <li class="tab-item"><a href="/IT3203/index.html" class="tab-link">Home</a></li>
+                <li class="tab-item"><a href="/IT3203/role_purpose.html" class="tab-link active">Role And Purpose</a></li>
+                <li class="tab-item"><a href="/IT3203/history.html" class="tab-link">History</a></li>
+                <li class="tab-item"><a href="/IT3203/current_status.html" class="tab-link">Current Status</a></li>
+                <li class="tab-item"><a href="/IT3203/references.html" class="tab-link">References</a></li>
+                <li class="tab-item"><a href="/IT3203/key_concepts.html" class="tab-link">Key Concepts</a></li>
+                <li class="tab-item"><a href="/IT3203/about.html" class="tab-link">About</a></li>
+                <li class="tab-item"><a href="/IT3203/quiz.html" class="tab-link">Quiz</a></li>
+            </ul>
+        </nav>
 
+        <!-- Content block explaining the role and purpose of a browser -->
         <h2>Role and Purpose</h2>
 
-            <p class="double-indent">
-                Its primary purpose is to act as an interface between a user and the internet. When a 
-                user enters a web address (URL) or clicks a hyperlink, the browser sends a request to 
-                a remote web server using Hypertext Transfer Protocol (HTTP) to fetch the files, such as 
-                text, images, and/or videos. Then, the browser's rendering engine translates the HTML, CSS, 
-                and JavaScript into an interactive visual format that users can easily read and navigate. 
-                Beyond basic content display, modern browsers also offer navigation tools like tabs and 
-                bookmarks, and support complex applications to streamline the digital experience.
-            </p>
+        <p class="double-indent">
+            Its primary purpose is to act as an interface between a user and the internet. When a 
+            user enters a web address (URL) or clicks a hyperlink, the browser sends a request to 
+            a remote web server using Hypertext Transfer Protocol (HTTP) to fetch the files, such as 
+            text, images, and/or videos. Then, the browser's rendering engine translates the HTML, CSS, 
+            and JavaScript into an interactive visual format that users can easily read and navigate. 
+            Beyond basic content display, modern browsers also offer navigation tools like tabs and 
+            bookmarks, and support complex applications to streamline the digital experience.
+        </p>
 
+        <!-- Picture showing the client-server process -->
+        <img src="images/ClientRequestServerResponse.png" alt="Picture of Client Request Server Response process" class="about-photo">
+
+        <!-- Content block displaying supported devices -->
         <h2>Main Role</h2>
             
-            <p class="double-indent">
-                The main role of a web browser is to retrieve and display web content on devices.
-            </p>
+        <p class="double-indent">
+            The main role of a web browser is to retrieve and display web content on devices.
+        </p>
 
-            <ul>
-                <li>Desktops</li>
-                <li>Laptops</li>
-                <li>Smartphones</li>
-                <li>Tablets</li>
-                <li>Consoles</li>
-                <li>Smart TVs</li>
-            </ul>
+        <!-- Unordered list of standard devices -->
+        <ul>
+            <li>Desktops</li>
+            <li>Laptops</li>
+            <li>Smartphones</li>
+            <li>Tablets</li>
+            <li>Consoles</li>
+            <li>Smart TVs</li>
+        </ul>
 
-        <footer style="margin-top: 30px;">
+        <!-- Footer containing project info -->
+        <footer>
             <hr>
             <p>This is a class project. The class website is:
                 <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>
