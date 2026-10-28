@@ -3,7 +3,7 @@
 /* Main container structure */
 main {
     width: 90%;          /* Uses a safe percentage width for the page */
-    max-width: 800px;    /* Keeps the line length easy to read */
+    max-width: 905px;    /* Keeps the line length easy to read */
     margin: 0 auto;      /* Centers the entire page content */
     font-family: Arial, sans-serif; /* Standard fallback font */
 }
@@ -65,11 +65,12 @@ p {
 
 /* Layout for the menu list items */
 .tab-menu {
-  display: flex;             /* Stacks list items side by side */
+  display: flex;                   /* Stacks list items side by side */
   list-style-type: none;
   margin: 0;
   padding: 0 10px;           
   border-bottom: 1px solid #ccc; /* The tabs sit on this*/
+  flex-wrap: wrap;                        /* Allows tabs to wrap to the next line if needed */
 }
 
 /* Spacing between tab elements */
