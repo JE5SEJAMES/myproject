@@ -237,3 +237,89 @@ footer {
   color: #0066cc;
   text-decoration: underline;
 }
+
+/* === QUIZ PAGE STYLES === */
+
+/* Separate each question box */
+.question-container p {
+    font-weight: bold;    
+    margin-bottom: 15px; /* Gives a little room below the question */
+}
+
+/* Adds some room between multiple choice options */
+.question-container label {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 25px; /* Indents checkbox and radio button areas */
+}
+
+/* Make text inputs easy to click into */
+input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 25px; /* Matches the indent of the other questions */
+}
+
+/* The timer display styling */
+#timer-display {
+    background-color: #ffe6e6; /* Light red grabs attention */
+    border: 1px solid #ff9999;
+    color: #cc0000;
+    padding: 5px 15px;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the Submit and Reset buttons */
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding:  10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #004c99; /* Darker blue when hovered */
+}
+
+/* Reset button */
+#resetBtn {
+    background-color: #6c757d;
+}
+
+#resetBtn:hover {
+    background-color: #5a6268;
+}
+
+/* Feedback colors for correct and incorrect answers */
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.correct-text {
+    color: #28a745; /* Green */
+}
+
+.incorrect-text {
+    color: #dc3545; /* Red */
+}
+
+/* Results area styling */
+#results-summary {
+    background-color: #e6f2ff;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+}

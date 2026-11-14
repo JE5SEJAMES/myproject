@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title for the browser tab -->
     <title>The Web Browser - Quiz</title>
-    <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Main container for the page -->
     <main>
 
-        <!-- Header section styled like a browser address bar -->
+        <!-- Header section -->
         <h1 class="address-bar-heading">
-        <span class="lock-icon">🔒</span>
-        <span class="bar-text">The Web Browser</span>
+            <span class="lock-icon">🔒</span>
+            <span class="bar-text">The Web Browser</span>
         </h1>
 
-        <!-- Navigation section with links to other pages -->
+        <!-- Navigation section -->
         <nav class="tab-container">
             <ul class="tab-menu">
                 <li class="tab-item"><a href="index.html" class="tab-link">Home</a></li>
@@ -34,11 +31,107 @@
             </ul>
         </nav>
 
-        <!-- Section for the quiz -->
-        <h2 id="Quiz">Quiz</h2>
-        <h3>To Be Determined</h3>
+        <h2 id="quiz">Web Browser Knowledge Quiz</h2>
 
-        <!-- Footer containing project info -->
+        <!-- Timer Display -->
+        <div id="timer-display">
+            <h3>Time Remaining: 10:00</h3>
+        </div>
+
+        <!-- Quiz Form -->
+        <form id="quizForm">
+            
+            <div class="question-container">
+                <p>1. What does URL stand for?</p>
+                <label><input type="radio" name="q1" value="Uniform Resource Locator"> Uniform Resource Locator</label><br>
+                <label><input type="radio" name="q1" value="Universal Resource Link"> Universal Resource Link</label><br>
+                <label><input type="radio" name="q1" value="Unified Resource Locator"> Unified Resource Locator</label><br>
+                <div id="feedback1"></div>
+            </div>
+
+            <div class="question-container">
+                <p>2. Which system translates domain names to IP addresses?</p>
+                <label><input type="radio" name="q2" value="HTTP"> HTTP</label><br>
+                <label><input type="radio" name="q2" value="URL"> URL</label><br>
+                <label><input type="radio" name="q2" value="DNS"> DNS</label><br>
+                <div id="feedback2"></div>
+            </div>
+
+            <div class="question-container">
+                <p>3. What is the temporary storage for faster page loading called?</p>
+                <label><input type="radio" name="q3" value="Browser Cache"> Browser Cache</label><br>
+                <label><input type="radio" name="q3" value="Cookies"> Cookies</label><br>
+                <label><input type="radio" name="q3" value="Session Storage"> Session Storage</label><br>
+                <div id="feedback3"></div>
+            </div>
+
+            <div class="question-container">
+                <p>4. What software translates HTML into visual pages?</p>
+                <input type="text" id="q4" placeholder="Type your answer here">
+                <div id="feedback4"></div>
+            </div>
+
+            <div class="question-container">
+                <p>5. The coding language driving dynamic page animations is _____.</p>
+                <input type="text" id="q5" placeholder="Type your answer here">
+                <div id="feedback5"></div>
+            </div>
+
+            <div class="question-container">
+                <p>6. Which of the following are considered Data & Storage? (Select all that apply)</p>
+                <label><input type="checkbox" name="q6" value="Browser Cache"> Browser Cache</label><br>
+                <label><input type="checkbox" name="q6" value="HTTP"> HTTP</label><br>
+                <label><input type="checkbox" name="q6" value="Cookies"> Cookies</label><br>
+                <label><input type="checkbox" name="q6" value="Session Storage"> Session Storage</label><br>
+                <div id="feedback6"></div>
+            </div>
+
+            <div class="question-container">
+                <p>7. Small software add-ons customizing browser features are called:</p>
+                <label><input type="radio" name="q7" value="Extensions"> Extensions</label><br>
+                <label><input type="radio" name="q7" value="Cookies"> Cookies</label><br>
+                <label><input type="radio" name="q7" value="DNS"> DNS</label><br>
+                <div id="feedback7"></div>
+            </div>
+
+            <div class="question-container">
+                <p>8. The protocol used to transfer web pages across the internet is abbreviated as _____.</p>
+                <input type="text" id="q8" placeholder="Type your answer here">
+                <div id="feedback8"></div>
+            </div>
+
+            <div class="question-container">
+                <p>9. Temporary data wiped after closing tabs is known as:</p>
+                <label><input type="radio" name="q9" value="Session Storage"> Session Storage</label><br>
+                <label><input type="radio" name="q9" value="Browser Cache"> Browser Cache</label><br>
+                <label><input type="radio" name="q9" value="Cookies"> Cookies</label><br>
+                <div id="feedback9"></div>
+            </div>
+
+            <div class="question-container">
+                <p>10. Which of the following fall under Interactivity & Extras? (Select all that apply)</p>
+                <label><input type="checkbox" name="q10" value="JavaScript"> JavaScript</label><br>
+                <label><input type="checkbox" name="q10" value="DNS"> DNS</label><br>
+                <label><input type="checkbox" name="q10" value="Extensions"> Extensions</label><br>
+                <label><input type="checkbox" name="q10" value="URL"> URL</label><br>
+                <div id="feedback10"></div>
+            </div>
+
+            <!-- Action Buttons -->
+            <button type="button" id="submitBtn">Submit Quiz</button>
+            <button type="reset" id="resetBtn">Reset</button>
+
+        </form>
+
+        <!-- Results Display (Hidden until submit button is clicked) -->
+        <div id="results-summary" style="display: none;">
+            <h3>Quiz Results</h3>
+            <p id="result-score"></p>
+            <p id="result-pass-fail"></p>
+            <p id="result-time"></p>
+        </div>
+
+        <!-- Footer -->
         <footer>
             <hr>
             <p>This is a class project. The class website is:
@@ -47,5 +140,9 @@
         </footer>
 
     </main>
+
+    <!-- Connects your upcoming JavaScript file -->
+    <script src="quiz.js"></script>
+
 </body>
 </html>
